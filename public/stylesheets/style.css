@@ -8,6 +8,18 @@ a {
   color: #00B7FF;
 }
 
+h3{
+  color: #8080ff;
+}
+
+h2{
+  color: #3333ff;
+}
+
+h1{
+  color: #0000e6;
+}
+
 
 .button {
    border-top: 1px solid #96d1f8;
@@ -59,3 +71,5 @@ a {
   color: #2E3133;
   border-color: #FBFFAD;
   }
+  
+  
