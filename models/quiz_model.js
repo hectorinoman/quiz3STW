@@ -45,7 +45,7 @@ function Quiz() {
   // insertar unas cuantas preguntas sobre
   // la tabla de multiplicar
   var self  = this;
-  for(var i = 0; i<3;i++) {
+  for(var i = 0; i<1;i++) {
     (function() {
       var n1 = Math.randomInt(9)+1;
       var n2 = Math.randomInt(9)+1;
@@ -61,5 +61,13 @@ function Quiz() {
 
 Quiz.prototype = new AbstractQuiz();
 Quiz.prototype.constructor = Quiz;
+
+Quiz.prototype.numQuestions = function() {
+  return this.q.length;
+}
+
+Quiz.prototype.getQ = function(x) {
+  return this.q[x]['pregunta'];
+}
 
 module.exports = Quiz;
