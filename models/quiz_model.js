@@ -36,6 +36,30 @@ function Quiz() {
         return (/^\s*guadalajara\s*$/i).exec(x);
       },
     },
+    
+            {
+      pregunta: ' ¿Con qué nombre firmaba Pablo Picasso sus pinturas? ',
+      respuesta: function(x) {
+        return (/^\s*picasso\s*$/i).exec(x);
+      },
+    },
+            {
+      pregunta: ' ¿Cuál es el fruto del roble?  ',
+      respuesta: function(x) {
+        return (/^\s*bellota\s*$/i).exec(x);
+      },
+    },
+    
+            {
+      pregunta: ' ¿Qué pie puso primero Neil Amstrong sobre la Luna? ',
+      respuesta: function(x) {
+        return (/^\s*izquierdo\s*$/i).exec(x);
+      },
+    },
+    
+    
+    
+   
    
     
     
