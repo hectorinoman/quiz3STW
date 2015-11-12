@@ -1,11 +1,13 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffffcc;
 }
 
 a {
   color: #00B7FF;
 }
+
 
 .button {
    border-top: 1px solid #96d1f8;
