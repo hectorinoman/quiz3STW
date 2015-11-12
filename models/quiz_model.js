@@ -22,7 +22,23 @@ function Quiz() {
         return false;
       },
     },
-
+      
+    {
+      pregunta: '¿Qué instrumento musical tiene nombre y forma geométricos?',
+      respuesta: function(x) {
+        return (/^\s*triangulo\s*$/i).exec(x);
+      },
+    },
+    
+        {
+      pregunta: ' ¿Qué capital española tiene cinco veces la misma vocal "a"? ',
+      respuesta: function(x) {
+        return (/^\s*guadalajara\s*$/i).exec(x);
+      },
+    },
+   
+    
+    
     { /* Código inseguro. ¡No ejecute esta pregunta salvo en un
          entorno en el que el código del "alumno" sea fiable!
        */
