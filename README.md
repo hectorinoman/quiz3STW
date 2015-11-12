@@ -4,6 +4,7 @@ En esta practica se pretende hacer un juego de preguntas con node y Express
 
 - Despliegue: [http://10.6.128.89:8080/]
 - Pagina personal: [www.hectorinoman.github.io]
+- Repositorio: [https://github.com/hectorinoman/quizSTW]
 
 
 
