@@ -2,7 +2,7 @@
 
 En esta practica se pretende hacer un juego de preguntas con node y Express
 
-- Despliegue: [hector-quiz-2015.herokuapp.com]
+- Despliegue: [www.hector-quiz-2015.herokuapp.com]
 - Pagina personal: [www.hectorinoman.github.io]
 - Repositorio: [https://github.com/hectorinoman/quiz2STW]
 
