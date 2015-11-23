@@ -1,4 +1,7 @@
 var AbstractQuiz = require('../models/abstract_quiz_model.js');
+var ShortQuestion = require('../models/question.js');
+var LargeQuestion = require('../models/question.js');
+var Answer = require('../models/answer.js');
 
 function Quiz() {
 
