@@ -1,6 +1,6 @@
 var AbstractQuiz = require('../models/abstract_quiz_model.js');
-var ShortQuestion = require('../models/question.js');
-var LargeQuestion = require('../models/question.js');
+var ShortQuestion = require('../models/shortquestion.js');
+//var LargeQuestion = require('../models/question.js');
 var Answer = require('../models/answer.js');
 
 function Quiz() {
@@ -99,6 +99,15 @@ function Quiz() {
     })();
   }
 }
+
+Quiz.prototype.getQ = function (index) {
+  return this.q[index];
+}
+
+Quiz.prototype.numQuestions = function() {
+	return this.q.length;
+}
+
 
 Quiz.prototype = new AbstractQuiz();
 Quiz.prototype.constructor = Quiz;

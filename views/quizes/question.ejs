@@ -1,5 +1,5 @@
 <form method="get" action="/quizes/answer">
-  Pregunta: <%- pregunta %><p>
-  <input type="text" class="textbox" name="respuesta" value="Respuesta" />
+  <p>Pregunta: <%= pregunta.ques %> </p>
+	<%- pregunta.view %>
   <input type="submit" class="button" value="Enviar" />
 </form>
