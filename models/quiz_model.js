@@ -25,37 +25,32 @@ function Quiz() {
     },
       
     {
-      pregunta: '¿Qué instrumento musical tiene nombre y forma geométricos?',
-      respuesta: function(x) {
-        return (/^\s*triangulo\s*$/i).exec(x);
-      },
+      pregunta: new ShortQuestion('¿Qué instrumento musical tiene nombre y forma geométricos?'),
+      respuesta: new Answer ((/^\s*triangulo\s*$/i))
+      
     },
     
         {
-      pregunta: ' ¿Qué capital española tiene cinco veces la misma vocal "a"? ',
-      respuesta: function(x) {
-        return (/^\s*guadalajara\s*$/i).exec(x);
-      },
+      pregunta: new ShortQuestion('¿Qué capital española tiene cinco veces la misma vocal "a"?'),
+      respuesta: new Answer (/^\s*guadalajara\s*$/i)
+      
     },
     
             {
-      pregunta: ' ¿Con qué nombre firmaba Pablo Picasso sus pinturas? ',
-      respuesta: function(x) {
-        return (/^\s*picasso\s*$/i).exec(x);
-      },
+      pregunta: new ShortQuestion (' ¿Con qué nombre firmaba Pablo Picasso sus pinturas? '),
+      respuesta: new Answer (/^\s*picasso\s*$/i)
+
     },
             {
-      pregunta: ' ¿Cuál es el fruto del roble?  ',
-      respuesta: function(x) {
-        return (/^\s*bellota\s*$/i).exec(x);
-      },
+      pregunta: new ShortQuestion(' ¿Cuál es el fruto del roble?  '),
+      respuesta: new Answer(/^\s*bellota\s*$/i)
+
     },
     
             {
-      pregunta: ' ¿Qué pie puso primero Neil Amstrong sobre la Luna? ',
-      respuesta: function(x) {
-        return (/^\s*izquierdo\s*$/i).exec(x);
-      },
+      pregunta: new ShortQuestion(' ¿Qué pie puso primero Neil Amstrong sobre la Luna? '),
+      respuesta: new Answer(/^\s*izquierdo\s*$/i)
+
     },
     
     
@@ -91,10 +86,10 @@ function Quiz() {
       var n1 = Math.randomInt(9)+1;
       var n2 = Math.randomInt(9)+1;
       self.q.push(
-        { pregunta: '¿ '+n1+'x'+n2+"= ?",
-          respuesta: function(x) {
+        { pregunta: new ShortQuestion('¿ '+n1+'x'+n2+"= ?"),
+          respuesta: new Answer (function(x) {
             return (x == n1*n2);
-        }
+        })
       })
     })();
   }
