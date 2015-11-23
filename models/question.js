@@ -1,6 +1,6 @@
 function Question(ques){
   this.ques = ques;
-  this.kind = kind;
+  this.kind;
 }
 
 function ShortQuestion(ques){

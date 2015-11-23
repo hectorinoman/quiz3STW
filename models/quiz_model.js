@@ -9,10 +9,8 @@ function Quiz() {
 
   this.q.push(
 
-    { pregunta: '¿Capital de Italia?',
-      respuesta: function(x) {
-        return (/^\s*roma\s*$/i).exec(x);
-      }
+    { pregunta: new ShortQuestion('¿Capital de Italia?'),
+      respuesta: new Answer(/^\s*roma\s*$/i)
     },
 
     {
