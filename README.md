@@ -2,9 +2,9 @@
 
 En esta practica se pretende hacer un juego de preguntas con node y Express
 
-- Despliegue: [http://10.6.128.89:8080/]
+- Despliegue: [http://hector-quiz-2015.herokuapp.com]
 - Pagina personal: [www.hectorinoman.github.io]
-- Repositorio: [https://github.com/hectorinoman/quizSTW]
+- Repositorio: [https://github.com/hectorinoman/quiz2STW]
 
 
 
