@@ -22,29 +22,4 @@ Question.prototype.Kind = function() {
 }
 
 
-
-
-
-
-
-function LargeQuestion(ques){
-  Question.call(this, ques);
-  kind = "large";
-}
-
-
-LargeQuestion.prototype.getKind = function(){
-  return this.kind;
-}
-
-LargeQuestion.prototype.getQues = function(){
-  return this.ques;
-}
-
-
-LargeQuestion.prototype = new Question();
-LargeQuestion.prototype.constructor = LargeQuestion;
-
-
 module.exports = Question;
-module.exports = LargeQuestion;

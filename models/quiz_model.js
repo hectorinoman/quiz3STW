@@ -1,6 +1,6 @@
 var AbstractQuiz = require('../models/abstract_quiz_model.js');
 var ShortQuestion = require('../models/shortquestion.js');
-//var LargeQuestion = require('../models/question.js');
+var LargeQuestion = require('../models/largequestion.js');
 var Answer = require('../models/answer.js');
 
 function Quiz() {
@@ -14,14 +14,14 @@ function Quiz() {
     },
 
     {
-      pregunta: '¿Quien reinaba en España cuando se descubrió América?',
-      respuesta: function(x) {
+      pregunta: new LargeQuestion('¿Quien reinaba en España cuando se descubrió América?'),
+      respuesta: new Answer (function(x) {
         if ((/\b(Isabel\s+y?\s*Fernando)|(Fernando\s+[ey]?\s*Isabel)\b/i).exec(x)) {
           return true;
         }
         if ((/\breyes\s+cat[oó]licos\b/i).exec(x)) { return true; }
         return false;
-      },
+      }),
     },
       
     {
@@ -62,9 +62,9 @@ function Quiz() {
     { /* Código inseguro. ¡No ejecute esta pregunta salvo en un
          entorno en el que el código del "alumno" sea fiable!
        */
-      pregunta: 'Escriba una función JavaScript de nombre <tt>square</tt> '+
-      'que recibe un número y devuelve el cuadrado',
-      respuesta: function(x) {
+      pregunta: new LargeQuestion('Escriba una función JavaScript de nombre <tt>square</tt> '+
+      'que recibe un número y devuelve el cuadrado'),
+      respuesta: new Answer(function(x) {
         try {
           eval(x); /* DANGER DANGER DANGER */
           var z = Math.floor(Math.random()*100);
@@ -74,7 +74,7 @@ function Quiz() {
           return false;
         }
         return false;
-      }
+      })
     }
   );
 
