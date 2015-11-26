@@ -1,6 +1,8 @@
 var AbstractQuiz = require('../models/abstract_quiz_model.js');
 var ShortQuestion = require('../models/shortquestion.js');
 var LargeQuestion = require('../models/largequestion.js');
+var SimpleChoice = require('../models/simplechoice.js');
+var MultiChoice = require('../models/multichoice.js');
 var Answer = require('../models/answer.js');
 
 function Quiz() {
@@ -9,7 +11,7 @@ function Quiz() {
 
   this.q.push(
 
-    { pregunta: new ShortQuestion('¿Capital de Italia?'),
+    { pregunta: new SimpleChoice('¿Capital de Italia? [Madrid],[Roma],[Italia]'),
       respuesta: new Answer(/^\s*roma\s*$/i)
     },
 
