@@ -11,7 +11,7 @@ function Quiz() {
 
   this.q.push(
 
-    { pregunta: new SimpleChoice('¿Capital de Italia? [Madrid],[Roma],[Italia]'),
+    { pregunta: new SimpleChoice('¿Capital de Italia?',['Madrid','Roma','Italia']),
       respuesta: new Answer(/^\s*roma\s*$/i)
     },
 

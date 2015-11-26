@@ -1,6 +1,6 @@
 function Question(ques){
   this.ques = ques;
-  this.view;
+  this.view = "";
 }
 
 
@@ -16,8 +16,10 @@ Question.prototype.Kind = function() {
   if(this instanceof ShortQuestion){
     this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
   }
-  if(this instanceof SimpleChoice){
-    this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
+  if(this instanceof SimpleChoice){        
+    for(var i = 0; i<options.length;i++){
+        this.view += "<input type='radio' name='respuesta' value='"+options[i]+"'>"+options[i]+"<br>";
+      }
   }
   if(this instanceof MultiChoice){
     this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
