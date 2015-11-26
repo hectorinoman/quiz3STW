@@ -16,7 +16,13 @@ Question.prototype.Kind = function() {
   if(this instanceof ShortQuestion){
     this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
   }
-  else {
+  if(this instanceof SimpleChoice){
+    this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
+  }
+  if(this instanceof MultiChoice){
+    this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
+  }
+  if(this instanceof LargeQuestion){
     this.view = "<textarea type='text' name='respuesta' rows='5' cols='50' placeholder='Responda aquí' autofocus=''></textarea>";
   }
 }
