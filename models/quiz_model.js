@@ -14,6 +14,11 @@ function Quiz() {
     { pregunta: new SimpleChoice('¿Capital de Italia?',['Madrid','Roma','Italia']),
       respuesta: new Answer(/^\s*roma\s*$/i)
     },
+    
+    { pregunta: new MultiChoice('¿Que instrumentos son de viento?', ['Flauta', 'Guitarra', 'Clarinete', 'Bajo']),
+      respuesta: new Answer(['Flauta', 'Clarinete'])
+      
+    },
 
     {
       pregunta: new LargeQuestion('¿Quien reinaba en España cuando se descubrió América?'),

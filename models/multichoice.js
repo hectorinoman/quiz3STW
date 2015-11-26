@@ -3,7 +3,9 @@ var Question = require('../models/question.js');
 function MultiChoice(ques,options){
   Question.call(this, ques);
   this.options = options;
-  this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
+  for(var i = 0; i<options.length;i++){
+        this.view += "<input type='checkbox' name='respuesta[]' value='"+options[i]+"'>"+options[i]+"<br>";
+      }
 }
 
 

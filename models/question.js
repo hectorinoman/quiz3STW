@@ -22,7 +22,9 @@ Question.prototype.Kind = function() {
       }
   }
   if(this instanceof MultiChoice){
-    this.view = "<input type='text' name='respuesta' placeholder='Responda aquí' autofocus=''>";
+      for(var i = 0; i<options.length;i++){
+        this.view += "<input type='checkbox' name='respuesta[]' value='"+options[i]+"'>"+options[i]+"<br>";
+      }
   }
   if(this instanceof LargeQuestion){
     this.view = "<textarea type='text' name='respuesta' rows='5' cols='50' placeholder='Responda aquí' autofocus=''></textarea>";
