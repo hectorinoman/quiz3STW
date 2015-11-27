@@ -11,13 +11,12 @@ function Answer(ans){
     return function(end){
       if(ans.length != end.length) return false;
 
-      var res = true;
-
       for(var i=0; i<ans.length; i++){
-        if(ans[i] != end[i]) res = false;
+        if(ans[i] != end[i]) 
+        return false;
       }
 
-      return res;
+      return true;
     };
   }
   
